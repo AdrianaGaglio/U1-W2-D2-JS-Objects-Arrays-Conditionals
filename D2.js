@@ -205,6 +205,7 @@ console.log("Tolgo prop. 'lastName'", me);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 console.log("L'elemento rimosso dall'oggetto è", me.skills.pop());
+console.log("L'oggetto aggiornato è ora il seguente", me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
