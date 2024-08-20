@@ -157,6 +157,15 @@ if (typeof typeOfVar === "string") {
   console.log("Il valore di typeOfVar è numerico = " + typeOfVar);
 }
 
+// opzione più corretta e completa
+// const userValue = prompt("Inserisci un valore:");
+// const parsedValue = parseInt(userValue);
+// if (typeof parsedValue === "number" && !isNaN(userValue)) {
+//   console.log("Il valore è di tipo numerico ed è: " + userValue);
+// } else {
+//   console.log("Il valore è di tipo stringa ed è " + userValue);
+// }
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
