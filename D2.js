@@ -15,17 +15,41 @@ console.log(num3);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const num4 = 7;
+
+if (num4 !== 5) {
+  console.log("Il valore di num4 è uguale a 5?", "not equal");
+}
+
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const number = 25;
+const isMultipleOfFive = number % 5;
+
+if (isMultipleOfFive === 0) {
+  console.log("Il numero è divisibile per 5?", "divisibile per 5");
+}
+
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const firstNum = 24;
+const secondNum = 16;
+
+if (firstNum === 8 || secondNum === 8) {
+  console.log("Il valore di uno dei 2 numeri è uguale a 8");
+} else if (firstNum + secondNum === 8 || firstNum - secondNum === 8 || secondNum - firstNum === 8) {
+  console.log("La somma/sottrazione dei due valori è uguale a 8");
+} else {
+  console.log("Nessuna operazione da come risultato 8.");
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
