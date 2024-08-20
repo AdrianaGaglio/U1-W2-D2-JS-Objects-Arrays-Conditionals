@@ -74,7 +74,7 @@ if (firstNum === 8) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart = 40;
+let totalShoppingCart = 51;
 const shippingCost = 10;
 
 if (totalShoppingCart > 50) {
@@ -91,6 +91,8 @@ if (totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// opzione 1 - prevede che definisco 2 variabili diverse per il totale + spedizione per entrambi gli esercizi
+
 totalShoppingCart -= (totalShoppingCart * 20) / 100;
 
 if (totalShoppingCart > 50) {
@@ -99,6 +101,25 @@ if (totalShoppingCart > 50) {
   totalBFAndShipping = totalShoppingCart + shippingCost;
   console.log("Es. 6 - Il totale scontato da pagare con costi di spedizione ammonta a", totalBFAndShipping + " €");
 }
+
+// opzione 2 - vengono sfruttate le stesse variabili senza la creazione di nuove variabili, impostando la condizione per la promo BF
+
+// const isBF = true;
+
+// if (isBF === true) {
+//   totalShoppingCart -= (totalShoppingCart * 20) / 100;
+//   if (totalShoppingCart > 50) {
+//     console.log("Es. 6 - Il totale scontato da pagare con spedizione gratuita ammonta a", totalShoppingCart + " €");
+//   } else {
+//     totalShoppingCart += shippingCost;
+//     console.log("Es. 6 - Il totale scontato da pagare con costi di spedizione ammonta a", totalShoppingCart + " €");
+//   }
+// } else if (totalShoppingCart > 50) {
+//   console.log("Es. 5 - Il totale da pagare con spedizione gratuita ammonta a", totalShoppingCart + " €");
+// } else {
+//   totalShoppingCart += shippingCost;
+//   console.log("Es. 5 - Il totale da pagare con costi di spedizione ammonta a", totalShoppingCart + " €");
+// }
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
