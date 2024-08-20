@@ -59,12 +59,31 @@ if (firstNum === 8 || secondNum === 8) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let totalShoppingCart = 35;
+let shippingCost = 10;
+
+// if (totalShoppingCart > 50) {
+//   console.log("Es. 5 - Il totale da pagare con spedizione gratuita ammonta a", totalShoppingCart + " €");
+// } else {
+//   totalShoppingCart = totalShoppingCart + shippingCost;
+//   console.log("Es. 5 - Il totale da pagare con costi di spedizione ammonta a", totalShoppingCart + " €");
+// }
+
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+totalShoppingCart -= (totalShoppingCart * 20) / 100;
+
+if (totalShoppingCart > 50) {
+  console.log("Es. 6 - Il totale scontato da pagare con spedizione gratuita ammonta a", totalShoppingCart + " €");
+} else {
+  totalShoppingCart = totalShoppingCart + shippingCost;
+  console.log("Es. 6 - Il totale scontato da pagare con costi di spedizione ammonta a", totalShoppingCart + " €");
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -74,17 +93,37 @@ if (firstNum === 8 || secondNum === 8) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const x = 1;
+const y = 3;
+const z = 5;
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const typeOfVar = "Ciao!";
+
+if (typeof typeOfVar === "string") {
+  console.log("Il valore di typeOfVar è di tipo stringa = " + typeOfVar);
+} else {
+  console.log("Il valore di typeOfVar è numerico = " + typeOfVar);
+}
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const isEven = 49;
+
+if (isEven % 2 === 0) {
+  console.log("Il numero " + isEven + " è pari!");
+} else {
+  console.log("Il numero " + isEven + " è dispari!");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
