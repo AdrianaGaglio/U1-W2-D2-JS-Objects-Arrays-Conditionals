@@ -237,6 +237,19 @@ console.log("L'oggetto aggiornato è ora il seguente", me);
 let newArray = [];
 
 newArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// corretto sarebbe stato:
+// newArray.push(1);
+// newArray.push(2);
+// newArray.push(3);
+// newArray.push(4);
+// newArray.push(5);
+// newArray.push(6);
+// newArray.push(7);
+// newArray.push(8);
+// newArray.push(9);
+// newArray.push(10);
+
 console.log("Aggiungo dei valori all'array creato", newArray);
 
 /* ESERCIZIO 15
