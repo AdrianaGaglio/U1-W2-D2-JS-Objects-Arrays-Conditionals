@@ -31,7 +31,7 @@ const number = 25;
 const isMultipleOfFive = number % 5;
 
 if (isMultipleOfFive === 0) {
-  console.log("Il numero è divisibile per 5?", "divisibile per 5");
+  console.log("Il numero è un multiplo di 5?", "divisibile per 5");
 }
 
 /* ESERCIZIO 4
@@ -43,12 +43,27 @@ if (isMultipleOfFive === 0) {
 const firstNum = 24;
 const secondNum = 16;
 
-if (firstNum === 8 || secondNum === 8) {
-  console.log("Il valore di uno dei 2 numeri è uguale a 8");
-} else if (firstNum + secondNum === 8 || firstNum - secondNum === 8 || secondNum - firstNum === 8) {
-  console.log("La somma/sottrazione dei due valori è uguale a 8");
+// if (firstNum === 8 || secondNum === 8) {
+//   console.log("Il valore di uno dei 2 numeri è uguale a 8");
+// } else if (firstNum + secondNum === 8 || firstNum - secondNum === 8 || secondNum - firstNum === 8) {
+//   console.log("La somma/sottrazione dei due valori è uguale a 8");
+// } else {
+//   console.log("Nessuna operazione da come risultato 8.");
+// }
+
+// algoritmo alternativo e più specifico
+if (firstNum === 8) {
+  console.log("Il valore del primo valore uguale a 8");
+} else if (secondNum === 8) {
+  console.log("Il valore del secondo valore uguale a 8");
+} else if (firstNum + secondNum === 8) {
+  console.log("La somma dei due valori è uguale a 8");
+} else if (firstNum - secondNum === 8) {
+  console.log("La sottrazione tra il primo e il secondo valore è 8");
+} else if (secondNum - firstNum === 8) {
+  console.log("La sottrazione tra il secondo e il primo valore è 8");
 } else {
-  console.log("Nessuna operazione da come risultato 8.");
+  console.log("Nessuna operazione tra i 2 valori ha come risultato 8.");
 }
 
 /* ESERCIZIO 5
@@ -59,15 +74,15 @@ if (firstNum === 8 || secondNum === 8) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart = 35;
-let shippingCost = 10;
+let totalShoppingCart = 40;
+const shippingCost = 10;
 
-// if (totalShoppingCart > 50) {
-//   console.log("Es. 5 - Il totale da pagare con spedizione gratuita ammonta a", totalShoppingCart + " €");
-// } else {
-//   totalShoppingCart = totalShoppingCart + shippingCost;
-//   console.log("Es. 5 - Il totale da pagare con costi di spedizione ammonta a", totalShoppingCart + " €");
-// }
+if (totalShoppingCart > 50) {
+  console.log("Es. 5 - Il totale da pagare con spedizione gratuita ammonta a", totalShoppingCart + " €");
+} else {
+  const totalAndShipping = totalShoppingCart + shippingCost;
+  console.log("Es. 5 - Il totale da pagare con costi di spedizione ammonta a", totalAndShipping + " €");
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -81,8 +96,8 @@ totalShoppingCart -= (totalShoppingCart * 20) / 100;
 if (totalShoppingCart > 50) {
   console.log("Es. 6 - Il totale scontato da pagare con spedizione gratuita ammonta a", totalShoppingCart + " €");
 } else {
-  totalShoppingCart = totalShoppingCart + shippingCost;
-  console.log("Es. 6 - Il totale scontato da pagare con costi di spedizione ammonta a", totalShoppingCart + " €");
+  totalBFAndShipping = totalShoppingCart + shippingCost;
+  console.log("Es. 6 - Il totale scontato da pagare con costi di spedizione ammonta a", totalBFAndShipping + " €");
 }
 
 /* ESERCIZIO 7
@@ -152,11 +167,11 @@ if (isEven % 2 === 0) {
 let val = 3;
 if (val < 10 && val >= 5) {
   // AGGIUNTA CONDIZIONE CON OPERATORE &&
-  console.log("Meno di 10");
+  console.log("Es. 10 - Meno di 10");
 } else if (val < 5) {
-  console.log("Meno di 5");
+  console.log("Es. 10 - Meno di 5");
 } else {
-  console.log("Uguale a 10 o maggiore");
+  console.log("Es. 10 - Uguale a 10 o maggiore");
 }
 
 /* ESERCIZIO 11
