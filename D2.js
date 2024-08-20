@@ -93,9 +93,19 @@ if (totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const x = 1;
-const y = 3;
-const z = 5;
+const numX = 3;
+const numY = 5;
+const numZ = 10;
+
+if (numX >= numY && numX >= numZ && numY >= numZ) {
+  console.log("L'ordine decrescente delle variabili è", numX + " " + numY + " " + numZ);
+} else if (numY >= numX && numY >= numZ && numX >= numZ) {
+  console.log("L'ordine decrescente delle variabili è", numY + " " + numX + " " + numZ);
+} else if (numZ >= numX && numZ >= numY && numX >= numY) {
+  console.log("L'ordine decrescente delle variabili è", numZ + " " + numX + " " + numY);
+} else if (numZ >= numX && numZ >= numY && numY >= numX) {
+  console.log("L'ordine decrescente delle variabili è", numZ + " " + numY + " " + numX);
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -139,6 +149,16 @@ if (isEven % 2 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let val = 3;
+if (val < 10 && val >= 5) {
+  // AGGIUNTA CONDIZIONE CON OPERATORE &&
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
+
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
@@ -151,11 +171,17 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.city = "Toronto";
+console.log("Aggiungo prop. 'city'", me);
+
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+delete me.lastName;
+console.log("Tolgo prop. 'lastName'", me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
@@ -163,14 +189,24 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("L'elemento rimosso dall'oggetto è", me.skills.pop());
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let newArray = [];
+
+newArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log("Aggiungo dei valori all'array creato", newArray);
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+newArray.splice(-1, 1, 100);
+console.log("Sostituisco il 10 (ultimo valore) con il 100", newArray);
